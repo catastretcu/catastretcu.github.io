@@ -367,16 +367,21 @@ background: none;
         color: #5A5A5A;
     }
 
-.cv-heading {
+.cv {
   padding: 3px 10px;
   padding-bottom: 15px;
   margin-bottom: 30px;
   display: block;
 }
 
-  .cv-heading p {
+  .cv p {
     font-size: 1.2em;
 }
+
+  .cv h2 {
+    font-family: 'Pacifico', cursive;
+    color: #0189B8;
+  }
 
 .heading {
     padding: 3px 10px;
