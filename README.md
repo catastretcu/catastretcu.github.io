@@ -1,1 +1,1 @@
-# Cata Stretcu's website is coming soon. Woohoo!
+# This is my personal website. Enjoy!
