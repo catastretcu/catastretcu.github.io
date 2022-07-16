@@ -48,8 +48,8 @@
                 <div id="main-nav" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav" id="mainNav">
                         <li class="active"><a href="#home" class="scroll-link">About me</a></li>
-
                         <li><a href="#skills" class="scroll-link">CV</a></li>
+                        <li><a href="#projects" class="scroll-link">Projects</a></li>
                     </ul>
                 </div>
                 <!--/.navbar-collapse-->
@@ -112,10 +112,21 @@
         <div class="heading text-center">
                 <!-- Heading -->
                 <h1>
-                  My <span style="color: #55AD63"><b>CV</b></span>
+                  My <span style="color: #0189B8"><b>CV</b></span>
                 </h1>
         </div>
         <div class="cv">
+          <h2>Work Experience</h2>
+          <p>
+           <span style="color: black"><b>Software Development Engineer Intern </b></span>
+           Since April 2022</br>
+           <span style="color: #0189B8"><b>Amazon Web Services - CloudWatch Metrics</b></span>
+           </br>
+           Dublin, Ireland
+          </p>
+        </br>
+
+        </br>
           <h2>Education</h2>
           <p>
            <span style="color: black"><b>MEng Electrical and Electronic Engineering </b></span>
@@ -134,7 +145,7 @@
            Drobeta-Turnu Severin, Romania
           </p>
         </br>
-        
+
         </br>
           <h2>Research</h2>
           <p>
@@ -228,14 +239,14 @@
         <p>
           <span style="color: black"><b>C/C++ </b></span>
           (programming contests and school experience)</br>
+          <span style="color: black"><b>Java </b></span>
+          (internship work and personal projects)</br>
           <span style="color: black"><b>Python </b></span>
           (personal projects)</br>
           <span style="color: black"><b>Verilog </b></span>
           (school and personal projects)</br>
           <span style="color: black"><b>C# </b></span>
           (school projects)</br>
-          <span style="color: black"><b>Java </b></span>
-          (beginner - personal projects)</br>
           <span style="color: black"><b>Swift </b></span>
           (beginner - personal projects)</br>
         </p>
@@ -291,6 +302,142 @@
       </div>
     </section>
 
+    <!--Projects-->
+    <section id="projects" class="secPad white">
+      <div class="container">
+        <div class="heading text-center">
+                <!-- Heading -->
+                <h1>
+                Projects
+                </h1>
+        </div>
+
+        <div class="project">
+          <h2>Spike Guard Lid</h2>
+          <div class="row">
+            <div class="column">
+              <p>
+              </br>
+              With drink spiking becoming a growing issue, this project is an interesting IoT approach to protecting your drink while on a night out. The Sike Guard lid uses two accelerometers to measure unwanted movement of your drink. A Raspberry Pi processes the data from the accelerometers and sends a message over MQTT to indicate that the lid has been moved in a suspicious way. My main area of work for the project was developing a mobile app to pair with the lid. The app can be used to arm a lid when planning to leave it unattended. It then checks the MQTT server periodically for spike messages and alerts the user if they are received or if the lid loses connectivity. An RGB LED is also used to indicate the status of the drink, in case the user forgot to use the app.
+              </p>
+              </br>
+              </br>
+              </br>
+              </br>
+              </br>
+              </br>
+              </br>
+              </br>
+              <p>
+              <b>
+              Third Year Embedded Systems Coursework
+              </br>
+              Imperial College London
+              </br>
+              2022
+              </b>
+              </p>
+            </div>
+
+            <div class="column">
+              <img src="images/vici-lid.png" alt="vici-lid" style="width:100%">
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <h2>Multi-Sensing Rover</h2>
+          <div class="row">
+            <div class="row">
+              <div class="column">
+                <p>
+                </br>
+                The aim of the project is to design and build an autonomous rover that could be operated in a remote location without direct supervision. The project is split into five separate modules that aim to give full function to the rover assembly. The modules are: Energy, Drive, Vision, Control, Command. My work was focused on the Drive module. The main components of the Drive module are a pair of DC motors, an Arduino, a switch-mode power supply and an optical-flow sensor. The Arduino microcontroller is used to receive commands from the Command module and to control the SMPS in order to send power to the DC motors accordingly. The optical flow sensor is used to collect data about the position of the rover. This data is then sent over UART to other rover modules.
+                </p>
+                </br>
+                </br>
+                </br>
+                </br>
+                <p>
+                <b>
+                Second Year End-Of-Year Project
+                </br>
+                Imperial College London
+                </br>
+                2021
+                </b>
+                </p>
+              </div>
+
+            <div class="column">
+              <img src="images/rover.png" alt="rover" style="width:100%">
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="project">
+          <h2>Circuit Simulator</h2>
+          <div class="row">
+            <div class="column">
+              <p>
+              </br>
+              This is a C++ coding project that takes standard SPICE netlist files as input and produces time-series data sets with the voltage at each node in the circuit and the current through each branch. The project also includes a MATLAB script that processes the time-series data from text files and displays relevant graphs. The repo containing the source code and instructions on how to run the simulator can be found <a href="https://github.com/catastretcu/NotBots-SPICE">here</a>.
+              </p>
+              </br>
+              </br>
+              </br>
+              </br>
+              </br>
+              </br>
+              <p>
+              <b>
+              First Year End-Of-Year Project
+              </br>
+              Imperial College London
+              </br>
+              2020
+              </b>
+              </p>
+            </div>
+
+            <div class="column">
+              <img src="images/spice.png" alt="spice" style="width:100%">
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <h2>Seismometer</h2>
+          <div class="row">
+            <div class="column">
+              <p>
+              </br>
+              An affordable seismometer powered by an Arduino microcontroller. The controller is used to process inputs from two sensor modules: a 3-axis accelerometer module and a handmade oscillating mass sensor. The accelerometer is mainly used to measure P-waves, the component of seismic waves that travel parallel to the surface of the Earth, while the oscillating mass sensor is used to measure S-waves, which travel perpendicular to the surface of the Earth. A neodymium magnet is connected to a spring and surrounded by a copper coil to make up the oscillating mass sensor. The magnet generates a current through the coil when it is oscillating and the Arduino, paired-up with a higher resolution ADC, is used to measure the current. Differential measurements from both the sensors are also used in an attempt to separate seismic events from environmental noise.
+              </p>
+              </br>
+              </br>
+              </br>
+              </br>
+              <p>
+              <b>
+              Research Project
+              </br>
+              Horia Hulubei Institute of Nuclear Physics in Magurele, Romania
+              </br>
+              2018
+              </b>
+              </p>
+            </div>
+
+            <div class="column">
+              <img src="images/seismo.png" alt="seismo" style="width:100%">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer>
         <div class="container">
             <div class="social text-center">
@@ -310,7 +457,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    Copyright 2020 | All Rights Reserved  -- Template by <a href="http://webThemez.com">WebThemez.com</a>
+                    Copyright 2022 | All Rights Reserved  -- Template by <a href="http://webThemez.com">WebThemez.com</a>
                 </div>
             </div>
             <!-- / .row -->
